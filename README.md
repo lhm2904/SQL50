@@ -7,5 +7,3 @@
 - **Advanced Select and Joins**
 - **Subqueries**
 - **Advanced String Functions / Regex / Clause**
-
-All solutions are mine.
