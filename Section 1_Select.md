@@ -47,7 +47,7 @@ Output:
 Explanation: Only products 1 and 3 are both low fat and recyclable.
 ```
 
-> [!CHECK] SOLUTION
+### SOLUTION
 
 ```sql
 SELECT product_id FROM Products
@@ -105,7 +105,7 @@ Output:
 +------+
 ```
 
-> [!CHECK] SOLUTION
+### SOLUTION
 
 ```sql
 SELECT name
@@ -168,7 +168,7 @@ Output:
 +-------------+------------+---------+
 ```
 
-> [!CHECK] SOLUTION
+### SOLUTION
 
 ```sql
 SELECT name, population, area
@@ -228,7 +228,7 @@ Output:
 +------+
 ```
 
-> [!CHECK] SOLUTION
+### SOLUTION
 
 ```sql
 SELECT DISTINCT("author_id") AS "id" 
@@ -283,7 +283,7 @@ Tweet 1 has length = 11. It is a valid tweet.
 Tweet 2 has length = 33. It is an invalid tweet.
 ```
 
-> [!CHECK] SOLUTION
+### SOLUTION
 
 ```sql
 SELECT tweet_id FROM Tweets
