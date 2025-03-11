@@ -161,7 +161,7 @@ WHERE (employee_id) IN (
 ORDER BY employee_id;
 ```
 
-> [!explanation] 
+> [!note] 
 > To select the primary department for each employee, we have 2 conditions:
 > 1. Selecting the employees with the `'Y'` flag.
 > 2. Among the ones with the `'N'` flag, there are discarded rows where the employees are not a primary member, but there are also the ones that only belong in one department (since they are also  labeled with the `'N'` flag). => **Selecting the ones that appear only once.**
@@ -289,7 +289,7 @@ WHERE num = prev_num
   AND prev_num = prev_2_num;
 ```
 
-> [!Explanation]
+> [!Note]
 > Since we need to check for 3 consecutive numbers, what we need to do is retrieve the 2 previous rows from the current one and check if the 3 are equal. In the case of a consecutive number, our result would look like this:
 
 | id  | num | prev_num | prev_2_num |
@@ -367,7 +367,7 @@ WHERE (product_id, change_date) IN (
                                    GROUP BY product_id);
 ```
 
-> [!Explanation]
+> [!Note]
 > **The first query:** Finds all products that have change dates later than `2019-08-16` and hard codes the value 10 to them since it's the default value before any price change.
 > **The second query:** Selects the **closest** price change dates of each product to `2019-08-16` and assign the latest price.
 
@@ -450,7 +450,6 @@ LIMIT 1;
 ```
 
 
-> [!Explanation] 
 
 First we calculate the running total of weight:
 
@@ -462,6 +461,7 @@ First we calculate the running total of weight:
 | Marie | 4 | 200 | 1200 |
 | Bob | 5 | 175 | 1375 |
 | Winston | 6 | 500 | 1875 |
+
 Then we filter out the `person_name` to the point where `cum_weight` is equal to or smaller than 1000. Sort that by `turn` descending and pick the top 1 as that is the latest person to step on the bus.
 
 ## Count Salary Categories
